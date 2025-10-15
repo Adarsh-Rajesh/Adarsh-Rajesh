@@ -10,8 +10,10 @@
   
 <p align="center">
 <!--     <img align="center" alt="coding" width="500" src="https://user-images.githubusercontent.com/55389276/140866485-8fb1c876-9a8f-4d6a-98dc-08c4981eaf70.gif"> -->
-     <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/22b22287602523.5dbd29081561d.gif" />
- <img src="https://readme-typing-svg.herokuapp.com/?color=A55CFF&size=30&center=true&&vCenter=true&width=1000&lines=Hi,+I'm+Adarsh!👋🏽;I'm+an+AI+Software+Developer+👨🏽‍💻)](https://git.io/typing-svg)
+     <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/22b22287602523.5dbd29081561d.gif" width="400" />
+</p>
+<p align="center">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&duration=3000&pause=1000&color=A55CFF&center=true&vCenter=true&width=600&lines=Hi%2C+I'm+Adarsh!+%F0%9F%91%8B%F0%9F%8F%BD;AI+Software+Developer+%F0%9F%91%A8%F0%9F%8F%BD%E2%80%8D%F0%9F%92%BB;Building+the+Future+%F0%9F%9A%80" alt="Typing SVG" />
 </p>    
 <p align="center">
     <img src="https://komarev.com/ghpvc/?username=Adarsh-Rajesh&color=blueviolet&style=for-the-badge" />
@@ -42,8 +44,10 @@
 ### 📈 GitHub Stats & Activity
 
 <p align="center">
-    <img width="49%" src="assets/github-stats.svg" alt="GitHub Stats (all commits)" />
-    <img width="49%" src="assets/top-languages.svg" alt="Top Languages" />
+    <a href="https://github.com/adarsh-rajesh">
+        <img height="180em" src="https://github-readme-stats.vercel.app/api?username=adarsh-rajesh&show_icons=true&rank_icon=github&count_private=true&include_all_commits=true&hide_border=false&border_color=A55CFF&title_color=A55CFF&icon_color=A55CFF&text_color=F4F4F6&bg_color=090014" alt="GitHub Stats"/>
+        <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=adarsh-rajesh&layout=compact&hide_border=false&border_color=A55CFF&title_color=A55CFF&text_color=F4F4F6&bg_color=090014&count_private=true&langs_count=8" alt="Top Languages"/>
+    </a>
 </p>
 
 <p align="center">
