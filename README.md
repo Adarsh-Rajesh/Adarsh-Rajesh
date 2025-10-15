@@ -1,10 +1,10 @@
 <p align="center">
-    <img src="banner.png" width="1000">
+    <img src="Banner1.png" width="1000">
 </p>
 <h2 align="center"> Hey There,I Am Adarsh Rajesh👋 </h2>
 
 </p>
-<h3 align="center"> Developer👨‍💻, Aspiring Financial Guy 👨‍👩‍👧‍👦, Learner </h3>
+<h3 align="center"> Developer👨‍💻, Aspiring Financial Guy💸, and AI Researcher🤖 </h3>
 <!--  <div align="center">
   <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/22b22287602523.5dbd29081561d.gif" />
   </div> -->
@@ -22,7 +22,7 @@
 
 - 🔭 Have played around with: 
 <p align="center">
-    <img src="https://skillicons.dev/icons?i=apple,docker,vim,arduino,aws,azure,bash,bootstrap,cpp,cassandra,py,discord,express,git,github,html,css,idea,gcp,java,js,linux,mongodb,mysql,nodejs,postgres,postman,powershell,react,ts,redis,threejs,sass,tailwind,vscode,raspberrypi,cloudflare,php,r,vercel,swift,&perline=12"/>
+    <img src="https://skillicons.dev/icons?i=apple,docker,vim,arduino,aws,azure,bash,bootstrap,py,discord,express,git,github,html,css,idea,gcp,java,js,linux,mongodb,mysql,nodejs,postgres,powershell,react,vscode,raspberrypi,cloudflare,php,r,vercel&perline=12"/>
 </p>
 
 
@@ -31,18 +31,19 @@
 
 ###Coding Platform
 
-    <a href="https://github.com/adarsh-rajesh" target="blank">
+    <a href="https://leetcode.com/u/Adarsh-Rajesh/" target="blank">
         <img align="center" src="https://img.shields.io/badge/dynamic/json?style=for-the-badge&labelColor=black&color=%23ffa116&label=Solved&query=solved&url=https%3A%2F%2Fleetcode-badge.vercel.app%2Fapi%2Fusers%2Fadarsh-rajesh&logo=leetcode&logoColor=yellow" alt="adarsh-rajesh"/>
     </a>
 </p>
 ### Some Statics 📈📱
 <p align="center">
-    <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=adarsh-rajesh&" alt="adarsh-rajesh" /></p>
+    <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=adarsh-rajesh&token=YOUR_PERSONAL_ACCESS_TOKEN" alt="adarsh-rajesh streak stats" />
+</p>
 <p align="center">
 <!-- <a href="https://github.com/adarsh-rajesh"> -->
   <!-- https://github-readme-activity-graph.vercel.app/graph?username=adarsh-rajesh&theme=github-compact)](https://github.com/ashutosh00710/github-readme-activity-graph)-->
  <img height="280em" src="https://github-readme-activity-graph.vercel.app/graph?username=adarsh-rajesh&theme=github-compact"/>
-<!--   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=adarsh-rajesh&show_icons=true&theme=algolia&include_all_commits=true&count_private=true"/>
+<!--   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=adarsh-rajesh&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=adarsh-rajesh&theme=algolia"/>
 </a>
  -->
