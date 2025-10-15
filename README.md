@@ -26,41 +26,28 @@
 </p>
 
 
-- 📜 For more details, visit :  <a href = "https://aarsh-patel.vercel.app/" target ="blank">  <img align ="center" alt="Website" src="https://img.shields.io/website?url=https%3A%2F%2Faarsh-patel.vercel.app%2F&logo=portfilio&labelColor=blue&color=white">
+- 📜 For more details, visit :  <a href = "https://leetcode.com/u/adarsh-rajesh/" target ="blank">  <img align ="center" alt="Website" src="https://img.shields.io/website?url=https%3A%2F%2Fadarsh-rajesh.vercel.app%2F&logo=portfilio&labelColor=blue&color=white">
     </a>
 
-### 🚀 Currently Building  
+###Coding Platform
 
-
-
-<p align="center">
-     <a href ="https://www.youtube.com/channel/UC8lWeV0xePxysVetCBGvLzA" target="blank">
-  <img align="center" alt="YouTube Channel Subscribers" src="https://img.shields.io/youtube/channel/subscribers/UC8lWeV0xePxysVetCBGvLzA?style=for-the-badge&logo=youtube&logoColor=red">
-
-</a>
-    <a href="https://www.linkedin.com/in/aarshpatel30/" target="blank">
-        <img align="center" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Aarsh30"/>
-    </a>
-    <a href="https://www.instagram.com/_aarsh_patel/" target="blank">
-        <img align="center" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Aarsh30" />
-    </a>
-    <a href="https://leetcode.com/Aarsh_Patel/" target="blank">
-        <img align="center" src="https://img.shields.io/badge/dynamic/json?style=for-the-badge&labelColor=black&color=%23ffa116&label=Solved&query=solved&url=https%3A%2F%2Fleetcode-badge.vercel.app%2Fapi%2Fusers%2FAarsh_Patel&logo=leetcode&logoColor=yellow" alt="Aarsh30"/>
+    <a href="https://github.com/adarsh-rajesh" target="blank">
+        <img align="center" src="https://img.shields.io/badge/dynamic/json?style=for-the-badge&labelColor=black&color=%23ffa116&label=Solved&query=solved&url=https%3A%2F%2Fleetcode-badge.vercel.app%2Fapi%2Fusers%2Fadarsh-rajesh&logo=leetcode&logoColor=yellow" alt="adarsh-rajesh"/>
     </a>
 </p>
 ### Some Statics 📈📱
 <p align="center">
-    <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=Aarsh30&" alt="Aarsh30" /></p>
+    <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=adarsh-rajesh&" alt="adarsh-rajesh" /></p>
 <p align="center">
-<!-- <a href="https://github.com/Aarsh30"> -->
-  <!-- https://github-readme-activity-graph.vercel.app/graph?username=SantoshYadavDev&theme=github-compact)](https://github.com/ashutosh00710/github-readme-activity-graph)-->
- <img height="280em" src="https://github-readme-activity-graph.vercel.app/graph?username=Aarsh30&theme=github-compact"/>
-<!--   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Aarsh30&show_icons=true&theme=algolia&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Aarsh30&theme=algolia"/>
+<!-- <a href="https://github.com/adarsh-rajesh"> -->
+  <!-- https://github-readme-activity-graph.vercel.app/graph?username=adarsh-rajesh&theme=github-compact)](https://github.com/ashutosh00710/github-readme-activity-graph)-->
+ <img height="280em" src="https://github-readme-activity-graph.vercel.app/graph?username=adarsh-rajesh&theme=github-compact"/>
+<!--   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=adarsh-rajesh&show_icons=true&theme=algolia&include_all_commits=true&count_private=true"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=adarsh-rajesh&theme=algolia"/>
 </a>
  -->
 </p>
 
-<!-- ![logo](https://github.com/Aarsh30/Aarsh30/blob/main/snake%20gif.gif)
-<!--[![Aarsh30's GitHub | Languages Over Time](https://stats.quine.sh/Aarsh30/languages-over-time?theme=light)](https://quine.sh)
+<!-- ![logo](https://github.com/adarsh-rajesh/adarsh-rajesh/blob/main/snake%20gif.gif)
+<!--[![adarsh-rajesh's GitHub | Languages Over Time](https://stats.quine.sh/adarsh-rajesh/languages-over-time?theme=light)](https://quine.sh)
 --->
