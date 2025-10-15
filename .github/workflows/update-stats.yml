@@ -19,17 +19,13 @@ jobs:
           ref: master
 
       - name: Download GitHub Stats Image
-        env:
-          GH_TOKEN: ${{ secrets.GH_STATS_TOKEN }}
         run: |
           mkdir -p assets
-          curl -s "https://github-readme-stats.vercel.app/api?username=adarsh-rajesh&show_icons=true&rank_icon=github&count_private=true&include_all_commits=true&hide_border=false&border_color=A55CFF&title_color=A55CFF&icon_color=A55CFF&text_color=F4F4F6&bg_color=090014" -o assets/github-stats.svg
+          curl -s "https://github-readme-stats.vercel.app/api?username=adarsh-rajesh&show_icons=true&rank_icon=github&count_private=true&include_all_commits=true&hide_border=false&border_color=A55CFF&title_color=A55CFF&icon_color=A55CFF&text_color=F4F4F6&bg_color=090014&PAT_1=${{ secrets.GH_STATS_TOKEN }}" -o assets/github-stats.svg
 
       - name: Download Top Languages Image
-        env:
-          GH_TOKEN: ${{ secrets.GH_STATS_TOKEN }}
         run: |
-          curl -s "https://github-readme-stats.vercel.app/api/top-langs/?username=adarsh-rajesh&layout=compact&hide_border=false&border_color=A55CFF&title_color=A55CFF&text_color=F4F4F6&bg_color=090014&count_private=true" -o assets/top-languages.svg
+          curl -s "https://github-readme-stats.vercel.app/api/top-langs/?username=adarsh-rajesh&layout=compact&hide_border=false&border_color=A55CFF&title_color=A55CFF&text_color=F4F4F6&bg_color=090014&count_private=true&PAT_1=${{ secrets.GH_STATS_TOKEN }}" -o assets/top-languages.svg
 
       - name: Commit and push if changed
         run: |
