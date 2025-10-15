@@ -47,7 +47,7 @@
 </p>
 
 <p align="center">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=adarsh-rajesh" alt="GitHub Streak Stats" />
+    <img src="https://streak-stats.demolab.com/?user=adarsh-rajesh&theme=dark&hide_border=false&border=A55CFF&ring=A55CFF&fire=A55CFF&currStreakLabel=A55CFF&background=090014&stroke=A55CFF&currStreakNum=F4F4F6&sideNums=F4F4F6&sideLabels=A55CFF&dates=F4F4F6" alt="GitHub Streak Stats" />
 </p>
 
 <p align="center">
@@ -55,9 +55,12 @@
 </p>
 <!-- Note: Activity Graph shows all contributions (including private). The GitHub Stats widget above displays public-only commit counts. -->
 
-<img src="https://github.com/user-attachments/assets/02d115e8-392a-4662-b2e1-e241f9a4d1fd" alt="club-penguin-playercard" align="right" width="100">
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/02d115e8-392a-4662-b2e1-e241f9a4d1fd" alt="club-penguin-playercard" width="100">
+</p>
 
-```
-</> Keep coding 💻🚀 </>
-```
+<p align="center">
+    <strong></> Keep coding 💻🚀 </></strong>
+</p>
+
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=A55CFF&height=120&section=footer"/>
