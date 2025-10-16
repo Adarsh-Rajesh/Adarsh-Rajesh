@@ -27,7 +27,7 @@ Displays achievements and rankings on your profile
 ### 2. **WakaTime Stats** ⏱️
 Shows your coding time breakdown by language (requires WakaTime account)
 ```markdown
-[![wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=YOUR_WAKATIME_USERNAME&layout=compact&theme=dark)](https://wakatime.com)
+[![wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=@f9752eb5-7b4b-43c3-9de0-ed161153422f&layout=compact&theme=dark)](https://wakatime.com)
 ```
 **What it shows**: Hours coding by language, daily average, etc.
 
@@ -36,7 +36,7 @@ Shows your coding time breakdown by language (requires WakaTime account)
 ### 3. **Visitors Counter with Different Styles** 👁️
 Already have this, but can upgrade to:
 ```markdown
-![](https://hit.yhype.me/github/profile?user_id=YOUR_USER_ID)
+![](https://hit.yhype.me/github/profile?user_id=Adarsh-Rajesh)
 ```
 **What it shows**: Real-time visitor tracking
 
@@ -63,7 +63,7 @@ Shows what you're listening to in real-time (requires Spotify setup)
 ### 6. **LeetCode Stats Card** 💻
 Enhanced LeetCode display with solved problems breakdown
 ```markdown
-[![LeetCode Stats](https://leetcode-badge.vercel.app/api/users/adarsh-rajesh?ext=heatmap)](https://leetcode.com/u/adarsh-rajesh/)
+[![LeetCode Stats](https://leetcode-badge.vercel.app/api/users/Adarsh-Rajesh?ext=heatmap)](https://leetcode.com/u/adarsh-rajesh/)
 ```
 **What it shows**: Total solved, acceptance rate, problem difficulty breakdown
 
