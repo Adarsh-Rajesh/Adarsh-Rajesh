@@ -46,7 +46,7 @@
 <p align="center">
     <a href="https://github.com/adarsh-rajesh">
         <img height="180em" src="https://github-readme-stats.vercel.app/api?username=adarsh-rajesh&show_icons=true&rank_icon=github&count_private=true&include_all_commits=true&hide_border=false&border_color=A55CFF&title_color=A55CFF&icon_color=A55CFF&text_color=F4F4F6&bg_color=090014" alt="GitHub Stats"/>
-        <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=adarsh-rajesh&layout=compact&hide_border=false&border_color=A55CFF&title_color=A55CFF&text_color=F4F4F6&bg_color=090014&count_private=true&langs_count=8" alt="Top Languages"/>
+        <!-- img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=adarsh-rajesh&layout=compact&hide_border=false&border_color=A55CFF&title_color=A55CFF&text_color=F4F4F6&bg_color=090014&count_private=true&langs_count=8" alt="Top Languages"/ -->
     </a>
 </p>
 
