@@ -43,12 +43,12 @@
 
 ### 📈 GitHub Stats & Activity
 
-<p align="center">
+<!-- p align="center">
     <a href="https://github.com/adarsh-rajesh">
         <img height="180em" src="https://github-readme-stats.vercel.app/api?username=adarsh-rajesh&show_icons=true&rank_icon=github&count_private=true&include_all_commits=true&hide_border=false&border_color=A55CFF&title_color=A55CFF&icon_color=A55CFF&text_color=F4F4F6&bg_color=090014" alt="GitHub Stats"/>
-        <!-- img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=adarsh-rajesh&layout=compact&hide_border=false&border_color=A55CFF&title_color=A55CFF&text_color=F4F4F6&bg_color=090014&count_private=true&langs_count=8" alt="Top Languages"/ -->
+        <!-- img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=adarsh-rajesh&layout=compact&hide_border=false&border_color=A55CFF&title_color=A55CFF&text_color=F4F4F6&bg_color=090014&count_private=true&langs_count=8" alt="Top Languages"/ >
     </a>
-</p>
+</p -->
 
 <p align="center">
     <img src="https://streak-stats.demolab.com/?user=adarsh-rajesh&theme=dark&hide_border=false&border=A55CFF&ring=A55CFF&fire=A55CFF&currStreakLabel=A55CFF&background=090014&stroke=A55CFF&currStreakNum=F4F4F6&sideNums=F4F4F6&sideLabels=A55CFF&dates=F4F4F6" alt="GitHub Streak Stats" />
