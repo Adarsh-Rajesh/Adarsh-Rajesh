@@ -209,7 +209,6 @@ Based on your profile (Developer + AI Researcher + Finance Enthusiast):
 
 ## Files to Update for Most Features:
 - `README.md` - Main profile file
-
 No additional configuration or dependencies needed for most features!
 
 ---
