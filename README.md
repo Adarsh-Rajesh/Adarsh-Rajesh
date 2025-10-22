@@ -1,6 +1,6 @@
-<p align="center">
+<!--p align="center">
     <img src="Banner1.png" width="1000" style="object-fit: cover;">
-</p>
+</p -->
 <h2 align="center"> Hey There, I Am Adarsh Rajesh 👋 </h2>
 
 <h3 align="center"> Developer 👨‍💻 | AI Researcher 🤖 | Finance Enthusiast 💸 </h3>
