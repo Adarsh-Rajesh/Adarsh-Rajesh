@@ -20,6 +20,12 @@
     <img src="https://komarev.com/ghpvc/?username=Adarsh-Rajesh&color=blueviolet&style=for-the-badge" />
 </p>
 
+<p align="center">
+  <a href="https://github.com/ryo-ma/github-profile-trophy">
+    <img src="https://github-profile-trophy.vercel.app/?username=Adarsh-Rajesh" alt="Adarsh-Rajesh" />
+  </a>
+</p>
+
 ### Connect with me
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-000?style=for-the-badge&logo=linkedin&logoColor=#A55CFF&color:FFFFF)](https://www.linkedin.com/in/adarshrajesh/)
