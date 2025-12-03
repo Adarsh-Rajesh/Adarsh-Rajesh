@@ -22,7 +22,7 @@
 
 <p align="center">
   <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src=https://github-profile-trophy.vercel.app/?username=Adarsh-Rajesh&theme=darkhub alt="Adarsh-Rajesh" />
+    <img src=https://github-profile-trophy.vercel.app/?username=Adarsh-Rajesh&theme=darkhub&row=1&column=3 alt="Adarsh-Rajesh" />
   </a>
 </p>
 
