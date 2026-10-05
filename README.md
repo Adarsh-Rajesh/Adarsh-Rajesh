@@ -20,12 +20,6 @@
     <img src="https://komarev.com/ghpvc/?username=Adarsh-Rajesh&color=blueviolet&style=for-the-badge" />
 </p>
 
-<p align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src=https://github-profile-trophy.vercel.app/?username=Adarsh-Rajesh&theme=darkhub&row=1&column=3 alt="Adarsh-Rajesh" />
-  </a>
-</p>
-
 ### Connect with me
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-000?style=for-the-badge&logo=linkedin&logoColor=#A55CFF&color:FFFFF)](https://www.linkedin.com/in/adarshrajesh/)
@@ -50,21 +44,21 @@
 
 ### 📈 GitHub Stats & Activity
 
-<!-- p align="center">
+<p align="center">
     <a href="https://github.com/adarsh-rajesh">
-        <img height="180em" src="https://github-readme-stats.vercel.app/api?username=adarsh-rajesh&show_icons=true&rank_icon=github&count_private=true&include_all_commits=true&hide_border=false&border_color=A55CFF&title_color=A55CFF&icon_color=A55CFF&text_color=F4F4F6&bg_color=090014" alt="GitHub Stats"/>
-        <!-- img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=adarsh-rajesh&layout=compact&hide_border=false&border_color=A55CFF&title_color=A55CFF&text_color=F4F4F6&bg_color=090014&count_private=true&langs_count=8" alt="Top Languages"/ >
+        <img height="180em" src="assets/github-stats.svg" alt="GitHub Stats"/>
+        <img height="180em" src="assets/top-languages.svg" alt="Top Languages"/>
     </a>
-</p -->
-
-<p align="center">
-    <img src="https://streak-stats.demolab.com/?user=adarsh-rajesh&theme=dark&hide_border=false&border=A55CFF&ring=A55CFF&fire=A55CFF&currStreakLabel=A55CFF&background=090014&stroke=A55CFF&currStreakNum=F4F4F6&sideNums=F4F4F6&sideLabels=A55CFF&dates=F4F4F6" alt="GitHub Streak Stats" />
 </p>
 
 <p align="center">
- <img src="https://github-readme-activity-graph.vercel.app/graph?username=adarsh-rajesh&theme=react-dark&hide_border=false&border_color=A55CFF&bg_color=090014&color=F4F4F6&line=A55CFF&point=F4F4F6" alt="Contribution Graph"/>
+    <img src="assets/streak.svg" alt="GitHub Streak Stats" />
 </p>
-<!-- Note: Activity Graph shows all contributions (including private). The GitHub Stats widget above displays public-only commit counts. -->
+
+<p align="center">
+    <img src="assets/activity-graph.svg" alt="Contribution Graph"/>
+</p>
+<!-- Cards in assets/ are generated daily by .github/workflows/update-stats.yml -->
 
 <p align="center">
     <img src="https://github.com/user-attachments/assets/02d115e8-392a-4662-b2e1-e241f9a4d1fd" alt="club-penguin-playercard" width="100">

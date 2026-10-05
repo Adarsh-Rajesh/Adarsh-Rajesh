@@ -1,0 +1,101 @@
+name: Update GitHub Stats
+
+# Generates the profile cards locally from open-source tools (no third-party
+# hosted apps) and commits the resulting SVGs to assets/.
+
+on:
+  schedule:
+    - cron: '0 2 * * *' # daily, 02:00 UTC
+  workflow_dispatch:
+
+concurrency:
+  group: update-stats
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+env:
+  # Optional PAT (read:user) stored as the GH_STATS_TOKEN secret: lets the stats
+  # include private contributions. Without it, falls back to the built-in token
+  # and only public data is counted.
+  STATS_TOKEN: ${{ secrets.GH_STATS_TOKEN || github.token }}
+  # Tools are pinned to a commit because they receive the token above.
+  STATS_REPO_SHA: 54a7985aeefda00d5eadb55b80c17c7f976c37d2    # anuraghazra/github-readme-stats
+  GRAPH_REPO_SHA: 0962e9461de815933d462e8b98c7ce566cada8fb    # Ashutosh00710/github-readme-activity-graph
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout profile repo
+        uses: actions/checkout@v4
+        with:
+          ref: master
+
+      - name: Streak card
+        uses: DenverCoder1/github-readme-streak-stats@d855de1a23fe45bdda5ffbc28a6d4b80b0f107e1 # v1.8.0
+        with:
+          token: ${{ env.STATS_TOKEN }}
+          path: assets/streak.svg
+          options: >-
+            user=adarsh-rajesh&theme=dark&hide_border=false&border=A55CFF&ring=A55CFF&fire=A55CFF&currStreakLabel=A55CFF&background=090014&stroke=A55CFF&currStreakNum=F4F4F6&sideNums=F4F4F6&sideLabels=A55CFF&dates=F4F4F6
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Fetch tools
+        run: |
+          fetch_at() { # repo sha dir
+            mkdir -p "$3" && cd "$3"
+            git init -q
+            git remote add origin "https://github.com/$1.git"
+            git fetch -q --depth 1 origin "$2"
+            git checkout -q FETCH_HEAD
+          }
+          fetch_at anuraghazra/github-readme-stats "$STATS_REPO_SHA" "$RUNNER_TEMP/stats"
+          fetch_at Ashutosh00710/github-readme-activity-graph "$GRAPH_REPO_SHA" "$RUNNER_TEMP/graph"
+
+      - name: Install tools
+        run: |
+          (cd "$RUNNER_TEMP/stats" && npm ci --ignore-scripts --no-audit --no-fund)
+          # upstream lockfile is out of sync, so npm ci refuses it
+          (cd "$RUNNER_TEMP/graph" && npm install --ignore-scripts --no-audit --no-fund)
+
+      - name: Start local servers
+        run: |
+          (cd "$RUNNER_TEMP/stats" && PAT_1="$STATS_TOKEN" PORT=9000 nohup node express.js > "$RUNNER_TEMP/stats.log" 2>&1 &)
+          (cd "$RUNNER_TEMP/graph" && TOKEN="$STATS_TOKEN" PORT=5100 nohup npx ts-node src/main.ts > "$RUNNER_TEMP/graph.log" 2>&1 &)
+          for i in $(seq 1 60); do
+            curl -s -o /dev/null http://localhost:9000/api && curl -s -o /dev/null http://localhost:5100/ && exit 0
+            sleep 2
+          done
+          echo "servers did not start"; cat "$RUNNER_TEMP"/*.log; exit 1
+
+      - name: Generate stats, languages and activity graph
+        run: |
+          mkdir -p assets
+          get() { # url outfile errorpattern
+            curl -fsS --retry 3 --retry-delay 5 -o "$2" "$1"
+            # these servers return HTTP 200 even on failure, so inspect the SVG
+            if ! head -c 400 "$2" | grep -q '<svg' || grep -qiE "$3" "$2"; then
+              echo "::error::$2 is an error card, not a real image"; head -c 600 "$2"; exit 1
+            fi
+          }
+          get 'http://localhost:9000/api?username=adarsh-rajesh&show_icons=true&rank_icon=github&count_private=true&include_all_commits=true&hide_border=false&border_color=A55CFF&title_color=A55CFF&icon_color=A55CFF&text_color=F4F4F6&bg_color=090014' \
+              assets/github-stats.svg 'something went wrong'
+          get 'http://localhost:9000/api/top-langs/?username=adarsh-rajesh&layout=compact&hide_border=false&border_color=A55CFF&title_color=A55CFF&text_color=F4F4F6&bg_color=090014&count_private=true&langs_count=8' \
+              assets/top-languages.svg 'something went wrong'
+          get 'http://localhost:5100/graph?username=adarsh-rajesh&theme=react-dark&hide_border=false&border_color=A55CFF&bg_color=090014&color=F4F4F6&line=A55CFF&point=F4F4F6' \
+              assets/activity-graph.svg "can't fetch any contribution"
+          # streak card is produced by its own action above; same sanity check
+          head -c 400 assets/streak.svg | grep -q '<svg'
+          ! grep -qi 'failed to retrieve' assets/streak.svg
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/*.svg
+          git diff --staged --quiet || (git commit -m "chore: update GitHub stats images [skip ci]" && git push)
