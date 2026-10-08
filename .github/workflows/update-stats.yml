@@ -23,7 +23,6 @@ env:
   # falls back to the built-in token and only public data is counted.
   STATS_TOKEN: ${{ secrets.GH_STATS_TOKEN || github.token }}
   # Tools are pinned to a commit because they receive the token above.
-  STATS_REPO_SHA: 54a7985aeefda00d5eadb55b80c17c7f976c37d2    # anuraghazra/github-readme-stats
   GRAPH_REPO_SHA: 0962e9461de815933d462e8b98c7ce566cada8fb    # Ashutosh00710/github-readme-activity-graph
 
 jobs:
@@ -42,7 +41,7 @@ jobs:
           fi
           scopes=$(curl -sI -H "Authorization: Bearer $STATS_TOKEN" https://api.github.com/user | tr -d '\015' | grep -i '^x-oauth-scopes:' | cut -d: -f2- | xargs)
           echo "::notice title=Token scopes::[${scopes:-none - fine-grained or built-in token}]"
-          case ",$scopes," in *repo*) ;; *) echo "::warning title=Token lacks repo scope::private repos/commits and their languages will be missing from the stats and top-languages cards";; esac
+          case ",$scopes," in *repo*) ;; *) echo "::warning title=Token lacks repo scope::private contributions will be missing from the cards";; esac
 
       - name: Streak card
         uses: DenverCoder1/github-readme-streak-stats@d855de1a23fe45bdda5ffbc28a6d4b80b0f107e1 # v1.8.0
@@ -65,26 +64,23 @@ jobs:
             git fetch -q --depth 1 origin "$2"
             git checkout -q FETCH_HEAD
           }
-          fetch_at anuraghazra/github-readme-stats "$STATS_REPO_SHA" "$RUNNER_TEMP/stats"
           fetch_at Ashutosh00710/github-readme-activity-graph "$GRAPH_REPO_SHA" "$RUNNER_TEMP/graph"
 
       - name: Install tools
         run: |
-          (cd "$RUNNER_TEMP/stats" && npm ci --ignore-scripts --no-audit --no-fund)
           # upstream lockfile is out of sync, so npm ci refuses it
           (cd "$RUNNER_TEMP/graph" && npm install --ignore-scripts --no-audit --no-fund)
 
       - name: Start local servers
         run: |
-          (cd "$RUNNER_TEMP/stats" && PAT_1="$STATS_TOKEN" PORT=9000 nohup node express.js > "$RUNNER_TEMP/stats.log" 2>&1 &)
           (cd "$RUNNER_TEMP/graph" && TOKEN="$STATS_TOKEN" PORT=5100 nohup npx ts-node src/main.ts > "$RUNNER_TEMP/graph.log" 2>&1 &)
           for i in $(seq 1 60); do
-            curl -s -o /dev/null http://localhost:9000/api && curl -s -o /dev/null http://localhost:5100/ && exit 0
+            curl -s -o /dev/null http://localhost:5100/ && exit 0
             sleep 2
           done
           echo "servers did not start"; cat "$RUNNER_TEMP"/*.log; exit 1
 
-      - name: Generate stats, languages and activity graph
+      - name: Generate activity graph
         run: |
           mkdir -p assets
           fail=0
@@ -99,10 +95,6 @@ jobs:
               mv "$tmp" "$2"
             fi
           }
-          get 'http://localhost:9000/api?username=adarsh-rajesh&show_icons=true&rank_icon=github&count_private=true&include_all_commits=true&hide_border=false&border_color=A55CFF&title_color=A55CFF&icon_color=A55CFF&text_color=F4F4F6&bg_color=090014' \
-              assets/github-stats.svg 'something went wrong'
-          get 'http://localhost:9000/api/top-langs/?username=adarsh-rajesh&layout=compact&hide_border=false&border_color=A55CFF&title_color=A55CFF&text_color=F4F4F6&bg_color=090014&count_private=true&langs_count=8' \
-              assets/top-languages.svg 'something went wrong|no languages data'
           get 'http://localhost:5100/graph?username=adarsh-rajesh&theme=react-dark&hide_border=false&border_color=A55CFF&bg_color=090014&color=F4F4F6&line=A55CFF&point=F4F4F6' \
               assets/activity-graph.svg "can't fetch any contribution"
           # streak card is produced by its own action above; same sanity check

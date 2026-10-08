@@ -45,13 +45,6 @@
 ### 📈 GitHub Stats & Activity
 
 <p align="center">
-    <a href="https://github.com/adarsh-rajesh">
-        <img height="180em" src="assets/github-stats.svg" alt="GitHub Stats"/>
-        <img height="180em" src="assets/top-languages.svg" alt="Top Languages"/>
-    </a>
-</p>
-
-<p align="center">
     <img src="assets/streak.svg" alt="GitHub Streak Stats" />
 </p>
 
