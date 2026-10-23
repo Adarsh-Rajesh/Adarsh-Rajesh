@@ -1,0 +1,18 @@
+name = "profile-views"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+
+[vars]
+# Only this username is counted/served; anything else gets a 404.
+ALLOWED_USER = "Adarsh-Rajesh"
+# Starting value, used only the very first time the counter is created.
+# Set it to your current komarev number right before you deploy.
+START_COUNT = "1723"
+
+[[durable_objects.bindings]]
+name = "COUNTER"
+class_name = "Counter"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["Counter"]
